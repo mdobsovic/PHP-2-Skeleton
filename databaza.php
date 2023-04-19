@@ -13,15 +13,20 @@ require __DIR__ . '/include/vrch.php';
 
 ?>
 <div class="container">
-    <form class="form-inline">
-        <div class="input-group">
-            <input type="text" class="form-control input-sm" name="meno" placeholder="Hľadať podľa mena">
-            <div class="input-group-btn">
-                <button type="submit" class="btn btn-info btn-sm">
-                    <i class="glyphicon glyphicon-search"></i>
-                    Hľadaj
-                </button>
-            </div>
+    <form>
+        <div class="mb-3">
+            <div class="row">
+                <div class="col-auto">
+                    <input type="text" class="form-control form-control-sm" name="meno" placeholder="Hľadať podľa mena" autocomplete="off">
+                </div>
+                <div class="col-auto">
+                    <div class="input-group-btn">
+                        <button type="submit" class="btn btn-primary btn-sm">
+                            <i class="bi bi-search"></i>
+                            Hľadaj
+                        </button>
+                    </div>
+                </div>
         </div>
     </form>
     <hr>

@@ -2,7 +2,7 @@
 require __DIR__ . '/include/vrch.php';
 ?>
 <div class="container">
-    <table class="table table-hover table-responsive">
+    <table class="table table-hover">
         <thead>
             <tr>
                 <th>Informácia</th>

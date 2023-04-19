@@ -6,34 +6,30 @@
 <head>
     <title><?= isset($_title) ? $_title : 'Moja webstránka v PHP'; ?></title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 <div class="container-fluid">
-    <nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary mb-3">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
-                    <span class="sr-only">Menu</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.php">
-                    <img alt="IT LEARNING SLOVAKIA" src="img/it-learning.png">
-                </a>
-            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="navbarNav" aria-expanded="false" aria-label="Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.php">
+                <img alt="IT LEARNING SLOVAKIA" src="img/it-learning.png">
+            </a>
 
             <div class="collapse navbar-collapse" id="main-menu">
-                <ul class="nav navbar-nav">
-                    <li<?= nazov_suboru() === 'index.php' ? ' class="active"' : ''; ?>><a href="index.php">Hlavná stránka</a></li>
-                    <li<?= nazov_suboru() === 'kto-som.php' ? ' class="active"' : ''; ?>><a href="kto-som.php">Kto som?</a></li>
-                    <li<?= nazov_suboru() === 'subory.php' ? ' class="active"' : ''; ?>><a href="subory.php">Súbory</a></li>
-                    <li<?= nazov_suboru() === 'galeria.php' ? ' class="active"' : ''; ?>><a href="galeria.php">Galéria</a></li>
-                    <li<?= nazov_suboru() === 'email.php' ? ' class="active"' : ''; ?>><a href="email.php">E-mail</a></li>
-                    <li<?= nazov_suboru() === 'pdf.php' ? ' class="active"' : ''; ?>><a href="pdf.php">PDF</a></li>
-                    <li<?= nazov_suboru() === 'databaza.php' ? ' class="active"' : ''; ?>><a href="databaza.php">Databáza</a></li>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link<?= nazov_suboru() === 'index.php' ? ' active' : ''; ?>" href="index.php">Hlavná stránka</a></li>
+                    <li class="nav-item"><a class="nav-link<?= nazov_suboru() === 'kto-som.php' ? ' active' : ''; ?>" href="kto-som.php">Kto som?</a></li>
+                    <li class="nav-item"><a class="nav-link<?= nazov_suboru() === 'subory.php' ? ' active' : ''; ?>" href="subory.php">Súbory</a></li>
+                    <li class="nav-item"><a class="nav-link<?= nazov_suboru() === 'galeria.php' ? ' active' : ''; ?>" href="galeria.php">Galéria</a></li>
+                    <li class="nav-item"><a class="nav-link<?= nazov_suboru() === 'email.php' ? ' active' : ''; ?>" href="email.php">E-mail</a></li>
+                    <li class="nav-item"><a class="nav-link<?= nazov_suboru() === 'pdf.php' ? ' active' : ''; ?>" href="pdf.php">PDF</a></li>
+                    <li class="nav-item"><a class="nav-link<?= nazov_suboru() === 'databaza.php' ? ' active' : ''; ?>" href="databaza.php">Databáza</a></li>
                 </ul>
             </div>
         </div>
